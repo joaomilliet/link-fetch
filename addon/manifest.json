@@ -1,0 +1,20 @@
+{
+  "aahext": 1,
+  "hubApi": 1,
+  "id": "com.jpmm.jpmm-link-fetch",
+  "name": "Link Fetch",
+  "vendor": "jpmm",
+  "version": "0.1.0",
+  "namespace": "jpmm-link-fetch",
+  "kind": "python",
+  "entry": "link_fetch",
+  "requires": {
+    "python": "3.9"
+  },
+  "access": {
+    "hosts": ["www.dropbox.com", "dl.dropboxusercontent.com", "wetransfer.com", "we.tl", "download.wetransfer.com", "drive.google.com", "drive.usercontent.google.com", "www.googleapis.com"],
+    "files": "reads zip files the user names in Downloads, Desktop or Documents (to merge Google Drive's split downloads), and reads the project folder the user names to check a fetch was copied there before clear_fetch removes the add-on's own temporary copy",
+    "macos": []
+  },
+  "notes": "Downloads client deliveries from Dropbox, WeTransfer and Google Drive share links, unzips them and organises the files (sessions, stems, references) into a song's folder. Needs the internet for those three services only."
+}
